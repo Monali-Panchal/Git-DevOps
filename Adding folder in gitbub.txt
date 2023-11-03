@@ -1,0 +1,58 @@
+Adding Folder in Github via gitbash
+------------------------
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git init
+Initialized empty Git repository in C:/Users/HP/Desktop/DevOps/Git/gitDemo/.git/
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Addition.sh.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git add -A
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Addition.sh.txt
+
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git commit -m "Adding folder to github via git bash"
+[master (root-commit) d74767c] Adding folder to github via git bash
+ 1 file changed, 10 insertions(+)
+ create mode 100644 Addition.sh.txt
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git remote add origin https://github.com/Monali-Panchal/Git-DevOps
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 362 bytes | 362.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Monali-Panchal/Git-DevOps/pull/new/master
+remote:
+To https://github.com/Monali-Panchal/Git-DevOps
+ * [new branch]      master -> master
+
+HP@LAPTOP-IU6MKA7J MINGW64 ~/Desktop/DevOps/Git/gitDemo (master)
+$
